@@ -8,7 +8,7 @@ def run_random_forest():
     X_test = load_npz("data/X_test.npz")
     y_train = np.load("data/y_train.npy")
     y_test = np.load("data/y_test.npy")
-    print("Training Random Forest Classifier...")
+    print("Training Random Forest Classifier....")
     model = RandomForestClassifier(n_estimators=100, max_depth=20, n_jobs=-1, random_state=42)
     model.fit(X_train, y_train)
     print("Evaluating model...")
