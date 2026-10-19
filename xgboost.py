@@ -8,7 +8,7 @@ def run_xgboost():
     X_test = load_npz("data/X_test.npz")
     y_train = np.load("data/y_train.npy")
     y_test = np.load("data/y_test.npy")
-    print("Training XGBoost Classifier...")
+    print("Training XGBoost Classifier")
     model = XGBClassifier(n_estimators=100, learning_rate=0.1, max_depth=6, n_jobs=-1,
     random_state=42)
     model.fit(X_train, y_train)
