@@ -15,7 +15,7 @@ def run_xgboost():
     print("Evaluating model")
     y_pred = model.predict(X_test)
     print("\n" + "="*40)
-    print(" XGBOOST CLASSIFIER RESULTS ")
+    print(" XGBOOST CLASSIFIER RESULTS")
     print("="*40)
     print(f"Accuracy : {accuracy_score(y_test, y_pred):.4f}")
     print(f"Precision : {precision_score(y_test, y_pred):.4f}")
