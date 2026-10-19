@@ -12,7 +12,7 @@ def run_xgboost():
     model = XGBClassifier(n_estimators=100, learning_rate=0.1, max_depth=6, n_jobs=-1,
     random_state=42)
     model.fit(X_train, y_train)
-    print("Evaluating model...")
+    print("Evaluating model")
     y_pred = model.predict(X_test)
     print("\n" + "="*40)
     print(" XGBOOST CLASSIFIER RESULTS ")
